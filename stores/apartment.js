@@ -1,0 +1,148 @@
+import { defineStore } from 'pinia';
+
+export const useApartmentStore = defineStore('apartments', {
+  state: () => ({
+    apartments: [
+      {
+        id: 1,
+        address: 'society',
+        floor: '1',
+        doorNumber: '01',
+        inventories: [{ id: 'idjs', name: 'TV', quantity: 1 }],
+      },
+      {
+        id: 2,
+        address: 'currency',
+        floor: '1',
+        doorNumber: '02',
+        inventories: [],
+      },
+      {
+        id: 3,
+        address: 'funeral',
+        floor: '1',
+        doorNumber: '03',
+        inventories: [],
+      },
+      {
+        id: 4,
+        address: 'audience',
+        floor: '1',
+        doorNumber: '04',
+        inventories: [],
+      },
+      {
+        id: 5,
+        address: 'teacher',
+        floor: '1',
+        doorNumber: '05',
+        inventories: [],
+      },
+      {
+        id: 6,
+        address: 'charity',
+        floor: '1',
+        doorNumber: '06',
+        inventories: [],
+      },
+      {
+        id: 7,
+        address: 'death',
+        floor: '1',
+        doorNumber: '07',
+        inventories: [],
+      },
+      {
+        id: 8,
+        address: 'suggestion',
+        floor: '1',
+        doorNumber: '08',
+        inventories: [],
+      },
+      {
+        id: 9,
+        address: 'pizza',
+        floor: '1',
+        doorNumber: '09',
+        inventories: [],
+      },
+      {
+        id: 10,
+        address: 'customer',
+        floor: '1',
+        doorNumber: '10',
+        inventories: [],
+      },
+      {
+        id: 11,
+        address: 'surgery',
+        floor: '2',
+        doorNumber: '01',
+        inventories: [],
+      },
+      {
+        id: 12,
+        address: 'idea',
+        floor: '2',
+        doorNumber: '02',
+        inventories: [],
+      },
+      {
+        id: 13,
+        address: 'secretary',
+        floor: '2',
+        doorNumber: '03',
+        inventories: [],
+      },
+      {
+        id: 14,
+        address: 'celebration',
+        floor: '2',
+        doorNumber: '04',
+        inventories: [],
+      },
+      {
+        id: 15,
+        address: 'nation',
+        floor: '2',
+        doorNumber: '05',
+        inventories: [],
+      },
+      {
+        id: 16,
+        address: 'complaint',
+        floor: '2',
+        doorNumber: '06',
+        inventories: [],
+      },
+      {
+        id: 17,
+        address: 'family',
+        floor: '2',
+        doorNumber: '07',
+        inventories: [],
+      },
+      {
+        id: 18,
+        address: 'impression',
+        floor: '2',
+        doorNumber: '08',
+        inventories: [],
+      },
+      {
+        id: 19,
+        address: 'recognition',
+        floor: '2',
+        doorNumber: '09',
+        inventories: [],
+      },
+      {
+        id: 20,
+        address: 'basis',
+        floor: '2',
+        doorNumber: '10',
+        inventories: [],
+      },
+    ], // Apartments
+  }), // State
+});
