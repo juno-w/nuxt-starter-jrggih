@@ -1,4 +1,9 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://v3.nuxtjs.org/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.NUXT_API_ENDPOINT_URL,
+    },
+  },
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "@vueuse/nuxt"],
 });
