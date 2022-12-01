@@ -1,5 +1,8 @@
 # Code Assessment For Rently
 
+### Login Page
+The login page is not a server-side authentication, I uses Pinia state management to mock a user.
+
 ### DaisyUI
 DaisyUI is good and I hope it is just for assessment purpose because I personally prefer Tailwind UI and Headless UI compared to opinionated named CSS classes like Bootstrap.
 
