@@ -117,13 +117,11 @@ const previewInventories = (aptId) => {
 };
 
 const approveInventories = async () => {
-  await $fetch(`${config.public.apiBase}/apartments/${apartment.data.id}/approve-inventories`, {
-    method: "POST",
-  }).then((res) => {
-    apartment.data = res;
-    apartments.value.find((apt) => apt.id === apartment.data.id).inventories = res.inventories;
-    apartments.value.find((apt) => apt.id === apartment.data.id).pending_inventories_count = res.pending_inventories_count;
-  });
+  const { data } = await useApproveInventories(apartment.data.id);
+
+  apartment.data = data.value;
+  apartments.value.find((apt) => apt.id === apartment.data.id).inventories = data.value.inventories;
+  apartments.value.find((apt) => apt.id === apartment.data.id).pending_inventories_count = data.value.pending_inventories_count;
 };
 
 onMounted(() => {

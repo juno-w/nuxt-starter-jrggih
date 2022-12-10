@@ -236,10 +236,7 @@ const editInventory = (invt) => {
 };
 
 const approveInventories = async () => {
-  await $fetch(`${config.public.apiBase}/apartments/${apartment.value.id}/approve-inventories`, {
-    method: "POST",
-  }).then((res) => {
-    apartment.value = res;
-  });
+  const { data } = await useApproveInventories(apartment.value.id);
+  apartment.value = data.value;
 };
 </script>
