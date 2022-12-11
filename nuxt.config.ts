@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/configuration/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
+  // ssr: false,
   runtimeConfig: {
     public: {
       apiBase: process.env.NUXT_API_ENDPOINT_URL,
